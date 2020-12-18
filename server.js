@@ -39,7 +39,7 @@ const sql = `INSERT INTO candidates (id, first_name, last_name, industry_connect
               VALUES (?,?,?,?)`;
 const params = [1, 'Ronald', 'Firbank', 1];
 // ES5 function, not arrow function, to use this
-db.run(sql, params, function(err, result) {
+db.run(sql, params, function(err, result){
   if (err) {
     console.log(err);
   }
